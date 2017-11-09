@@ -15,9 +15,6 @@ class App extends Component {
                     <Row>
                         <Col span={24}>
                             <NavBar></NavBar>
-                            <ul>
-                                <li><Link to="/about">About</Link></li>
-                            </ul>
                         </Col>
 
                     </Row>

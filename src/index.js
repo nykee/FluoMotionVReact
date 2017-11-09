@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 import Dashboard from './components/DashBoard'
 import registerServiceWorker from './registerServiceWorker';
-import { Router, Route,  browserHistory  } from 'react-router';
+import { Router, Route,  browserHistory,IndexRoute  } from 'react-router';
 
 
 
 const routes =
     <Route path={'/'} components={App}>
-        <Route path="about" component={Dashboard} />
+        <IndexRoute component={Dashboard} />
 
 
 
