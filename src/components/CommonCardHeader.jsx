@@ -6,13 +6,16 @@ class CommonCardHeader extends React.Component {
             display:'block',visibility:'hidden',clear:'both',height:0,content:'.',fontSize:0
         };
         let fr={
-            float:'right'
+            float:'right',
+
         };
         let fl={
-            float:'left'
+            float:'left',
+            fontSize:18,
+            fontWeight:'bold'
         };
         return (
-            <div className="card-top">
+            <div className="card-top" style={{marginBottom:'1rem'}}>
                 <h3 style={fl}>{this.props.title}</h3>
                 <i className="fa fa-refresh" style={fr}></i>
                 <span style={clearFix}></span>

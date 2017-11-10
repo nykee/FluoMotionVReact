@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1f1183cd-dc69-46e4-995e-ac5d225c99c2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/CustomCard.jsx" afterPath="$PROJECT_DIR$/src/components/CustomCard.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/DashBoard.jsx" afterPath="$PROJECT_DIR$/src/components/DashBoard.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/LeftNav.jsx" afterPath="$PROJECT_DIR$/src/components/LeftNav.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/CommonCardHeader.jsx" afterPath="$PROJECT_DIR$/src/components/CommonCardHeader.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/CustomCardSum.jsx" afterPath="$PROJECT_DIR$/src/components/CustomCardSum.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LeftNav.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LeftNav.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/LeftNav.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            <state relative-caret-position="198">
+              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -79,8 +77,8 @@
       <file leaf-file-name="CommonCardHeader.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/CommonCardHeader.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+            <state relative-caret-position="418">
+              <caret line="19" column="60" lean-forward="true" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -89,8 +87,8 @@
       <file leaf-file-name="CustomCard.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/CustomCard.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="58" lean-forward="true" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+            <state relative-caret-position="308">
+              <caret line="23" column="76" lean-forward="true" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -98,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomCardSum.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CustomCardSum.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/CustomCardSum.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="24" column="83" lean-forward="false" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="83" />
+            <state relative-caret-position="245">
+              <caret line="24" column="83" lean-forward="true" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -141,13 +139,13 @@
         <option value="$PROJECT_DIR$/src/components/NavBar.jsx" />
         <option value="$PROJECT_DIR$/src/components/CustomActivityCard.jsx" />
         <option value="$PROJECT_DIR$/src/components/CustomMessageCard.jsx" />
-        <option value="$PROJECT_DIR$/src/components/CommonCardHeader.jsx" />
         <option value="$PROJECT_DIR$/src/components/CommonCardFooter.jsx" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/DashBoard.jsx" />
-        <option value="$PROJECT_DIR$/src/components/CustomCardSum.jsx" />
         <option value="$PROJECT_DIR$/src/components/CustomCard.jsx" />
         <option value="$PROJECT_DIR$/src/components/LeftNav.jsx" />
+        <option value="$PROJECT_DIR$/src/components/CommonCardHeader.jsx" />
+        <option value="$PROJECT_DIR$/src/components/CustomCardSum.jsx" />
       </list>
     </option>
   </component>
@@ -216,13 +214,6 @@
               <item name="FluoReact" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="style" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FluoReact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FluoReact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -369,12 +360,12 @@
       <workItem from="1510213463496" duration="4046000" />
       <workItem from="1510281887294" duration="1279000" />
       <workItem from="1510283757728" duration="1643000" />
-      <workItem from="1510285471174" duration="14869000" />
+      <workItem from="1510285471174" duration="16095000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43827000" />
+    <option name="totallyTimeSpent" value="45053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -794,32 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CommonCardHeader.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CustomCardSum.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="83" lean-forward="false" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CustomCard.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="58" lean-forward="true" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/DashBoard.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -832,11 +797,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LeftNav.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="198">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CommonCardHeader.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="60" lean-forward="true" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CustomCard.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="23" column="76" lean-forward="true" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CustomCardSum.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="24" column="83" lean-forward="true" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="83" />
+          <folding />
         </state>
       </provider>
     </entry>

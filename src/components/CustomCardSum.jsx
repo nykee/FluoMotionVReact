@@ -7,7 +7,7 @@ class CustomCardSum extends React.Component {
         this.state={
             hover:false
         };
-        this.onMouseEnter =this.onMouseEnter.bind(this)
+        this.onMouseEnter =this.onMouseEnter.bind(this);
         this.onMouseLeave =this.onMouseLeave.bind(this)
     }
 
