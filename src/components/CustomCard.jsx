@@ -8,10 +8,11 @@ class CustomCard extends React.Component {
             <Card>
                 <Row>
                     <Col span={8}>
-                        <i className="fa fa-heart fa-2x"></i>
+                        <i className={this.props.iconClass}></i>
                     </Col>
                     <Col span={16}>
-                        <h3></h3>
+                        <h3>{this.props.titleName}</h3>
+                        <span>{this.props.sum}</span>
                     </Col>
                     
                 </Row>

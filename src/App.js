@@ -7,10 +7,14 @@ import './App.css';
 
 class App extends Component {
   render() {
+      let windHeight =window.innerHeight;
+      let leftNStyle={
+          height:windHeight
+      };
     return (
         <div className="App">
-            <Row>
-                <Col span={4}><LeftNav></LeftNav></Col>
+            <Row gutter={20}>
+                <Col span={4} style={leftNStyle}><LeftNav></LeftNav></Col>
                 <Col span={20}>
                     <Row>
                         <Col span={24}>
