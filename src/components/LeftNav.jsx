@@ -1,6 +1,5 @@
 import React from 'react';
-import { Menu, Icon } from 'antd'
-import { Row, Col } from 'antd';
+import { Menu, Icon ,Row, Col} from 'antd'
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 

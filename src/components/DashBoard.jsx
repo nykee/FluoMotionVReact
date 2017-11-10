@@ -28,16 +28,16 @@ class DashBoard extends React.Component {
             <div>
                 <Row>
                     <Col span={12}>
-                        <Row>
+                        <Row gutter={10}>
                             <Col span={12}>
 
                                 <CustomCard ref="card1" iconClass="fa fa-heart fa-2x" titleName="收藏" sum="120"></CustomCard>
-                                <CustomCard ref="card1" iconClass="fa fa-tasks fa-2x" titleName="任务" sum="200"></CustomCard>
+                                <CustomCard  ref="card1" iconClass="fa fa-tasks fa-2x" titleName="任务" sum="200"></CustomCard>
 
                             </Col>
                             <Col span={12}>
                                 <CustomCard ref="card1" iconClass="fa fa-envelope fa-2x" titleName="消息" sum="220"></CustomCard>
-                                <CustomCard ref="card1" iconClass="fa fa-cloud fa-2x" titleName="数据" sum="320"></CustomCard>
+                                <CustomCard   ref="card1" iconClass="fa fa-cloud fa-2x" titleName="数据" sum="320"></CustomCard>
                             </Col>
                         </Row>
                     </Col>
@@ -45,7 +45,7 @@ class DashBoard extends React.Component {
                         echarts
                     </Col>
                 </Row>
-                <Row>
+                <Row style={{marginTop:20}}>
                     <Col span={8}>
                         <CustomActivityCard ref="activityCard" activity={activity} title="动态"></CustomActivityCard>
 

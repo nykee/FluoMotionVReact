@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import LeftNav from './components/LeftNav';
 import NavBar from './components/NavBar'
 import { Row, Col } from 'antd';
-import {  Link } from 'react-router'
 import './App.css';
 
 class App extends Component {
@@ -25,6 +24,18 @@ class App extends Component {
                     <Row>
 
                         {this.props.children}
+                    </Row>
+                    <Row>
+                        <Row type="flex" justify="center">
+                            <Col>
+                            <img src="./style/img/inno1.png" alt=""/>
+                            </Col>
+                        </Row>
+                        <Row type="flex" justify="center">
+                            <Col>
+                            <span>Copyright &copy; 2012-2017 Shanghai Innomotion Medical Inc. All Rights Reserved</span>
+                        </Col>
+                    </Row>
                     </Row>
                 </Col>
             </Row>
