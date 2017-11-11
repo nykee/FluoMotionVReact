@@ -10,6 +10,7 @@ class DashBoard extends React.Component {
 
     render() {
 
+
         let activity=[
             {name:'删除病例--张三丰',timetag:'2017-9-30 17:30'},
             {name:'删除病例--张三丰2',timetag:'2017-9-29 17:30'},
