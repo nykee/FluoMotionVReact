@@ -30,10 +30,8 @@ class DashBoard extends React.Component {
                     <Col span={12}>
                         <Row gutter={10}>
                             <Col span={12}>
-
                                 <CustomCard ref="card1" iconClass="fa fa-heart fa-2x" titleName="收藏" sum="120"></CustomCard>
                                 <CustomCard  ref="card1" iconClass="fa fa-tasks fa-2x" titleName="任务" sum="200"></CustomCard>
-
                             </Col>
                             <Col span={12}>
                                 <CustomCard ref="card1" iconClass="fa fa-envelope fa-2x" titleName="消息" sum="220"></CustomCard>
@@ -48,14 +46,11 @@ class DashBoard extends React.Component {
                 <Row style={{marginTop:20}}>
                     <Col span={8}>
                         <CustomActivityCard ref="activityCard" activity={activity} title="动态"></CustomActivityCard>
-
                     </Col>
                     <Col span={8}>
                         <CustomMessageCard ref="messageCard" message={message} title="通知"></CustomMessageCard>
-
                     </Col>
                     <Col span={8}>
-
                         <CustomActivityCard ref="activityCard" activity={activity} title="动态"></CustomActivityCard>
                     </Col>
                 </Row>

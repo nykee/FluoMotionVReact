@@ -4,6 +4,9 @@ import CommonCardHeader from './CommonCardHeader'
 import CommonCardFooter from './CommonCardFooter'
 
 class CustomActivityCard extends React.Component {
+
+
+
     render() {
         let cardContentItems = [];
         for(let act of this.props.activity){
