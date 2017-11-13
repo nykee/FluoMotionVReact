@@ -12,7 +12,7 @@ class CustomActivityCard extends React.Component {
         for(let act of this.props.activity){
             cardContentItems.push(
                 <Row>
-                    <Col span={4}><i className="fa fa-dot-circle-o fa-lg"></i></Col>
+                    <Col span={4}><i className="fa fa-dot-circle-o fa-lg" style={{color:'#6CC788'}}></i></Col>
                     <Col span={12}>{act.name}</Col>
                     <Col span={8}><b className="time-tag">{act.timetag}</b></Col>
                 </Row>

@@ -28,7 +28,7 @@ class CommonCardHeader extends React.Component {
             fontSize:18,
             fontWeight:'bold'
         };
-        let refreshStyle= this.state.hover?{float:'right',cursor:'pointer',fontSize:18}:{float:'right',fontSize:18};
+        let refreshStyle= this.state.hover?{float:'right',cursor:'pointer',fontSize:18,color:'#6CC788'}:{float:'right',fontSize:18};
         return (
             <div className="card-top" style={{marginBottom:'1rem'}}>
                 <h3 style={fl}>{this.props.title}</h3>

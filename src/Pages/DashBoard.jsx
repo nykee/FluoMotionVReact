@@ -1,8 +1,9 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-import CustomCard from './CustomCard'
-import CustomActivityCard from './CustomActivityCard'
-import CustomMessageCard from './CustomMessageCard'
+import CustomCard from '../components/CustomCard/CustomCard'
+import CustomActivityCard from '../components/CustomCard/CustomActivityCard'
+import CustomMessageCard from '../components/CustomCard/CustomMessageCard'
+import PieChart from '../components/Echarts/PieChart'
 
 class DashBoard extends React.Component {
 
@@ -41,7 +42,7 @@ class DashBoard extends React.Component {
                         </Row>
                     </Col>
                     <Col span={12}>
-                        echarts
+                        <PieChart></PieChart>
                     </Col>
                 </Row>
                 <Row style={{marginTop:20}}>

@@ -9,7 +9,7 @@ class CustomMessageCard extends React.Component {
         for(let mes of this.props.message){
             cardContentItems.push(
                 <Row>
-                    <Col span={4}><i className="fa fa-circle-o fa-lg"></i></Col>
+                    <Col span={4}><i className="fa fa-circle-o fa-lg" style={{color:'#6CC788'}}></i></Col>
                     <Col span={12}>{mes.name}</Col>
                     <Col span={8}><b className="time-tag">{mes.timetag}</b></Col>
                 </Row>
