@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LeftNav from './components/LeftNav';
 import NavBar from './components/NavBar'
+import BreadCrumb from './components/BreadCrumb'
 import { Row, Col } from 'antd';
 import './App.css';
 import innoLogo from './style/img/inno1.png'
@@ -24,7 +25,13 @@ class App extends Component {
                             <NavBar></NavBar>
                         </Col>
                     </Row>
+                    <Row justify="left">
+                        <Col span={6}>
+                            <BreadCrumb></BreadCrumb>
+                        </Col>
+                    </Row>
                     <Row>
+
                         {/*路由显示区*/}
                         {this.props.children}
                     </Row>

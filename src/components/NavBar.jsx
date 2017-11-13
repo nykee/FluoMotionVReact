@@ -1,15 +1,16 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 import { Menu, Dropdown, Avatar } from 'antd';
+import {Link} from 'react-router'
 import userAvatar from '../style/img/u-default.jpg'
 
 const menu = (
     <Menu>
         <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="">账户信息</a>
+            <Link to="/accountInfo">账户信息</Link>
         </Menu.Item>
         <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="">退出登录</a>
+            <Link to="/logout">退出登录</Link>
         </Menu.Item>
     </Menu>
 );
