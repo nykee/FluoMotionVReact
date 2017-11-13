@@ -22,17 +22,14 @@ class CommonCardFooter extends React.Component {
 
 
     render() {
-        let fr={
-            float:'right',
 
-        };
-        let onHover ={
-            cursor:'pointer',
-            color:'#6CC788'
-        };
+
+        let moreInfoStyle =this.state.hover?{float:'right',cursor:'pointer', color:'#6CC788'}:{float:'right'};
         return (
-            <div className={this.state.hover?onHover:''}>
-                <span className="moreInfo " style={fr}><i className="fa fa-angle-double-right fa-lg "></i>更多</span>
+            <div style={{marginTop:'1.2rem'}}>
+                <span className="moreInfo " style={moreInfoStyle} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
+                    <i className="fa fa-angle-double-right fa-lg "></i>更多
+                </span>
             </div>
 
         )

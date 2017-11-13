@@ -24,7 +24,7 @@ class CustomCardSum extends React.Component {
     render() {
         let sumHoverStyle =this.state.hover?{color:'#20A0FF', cursor:'pointer'}:{};
         return (
-            <h2 style={sumHoverStyle} >{this.props.sum}</h2>
+            <h2 style={sumHoverStyle} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>{this.props.sum}</h2>
         )
     }
 }
