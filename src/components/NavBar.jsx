@@ -19,10 +19,10 @@ class NavBar extends React.Component {
     {
         return (
             <Row>
-                <Col span={6}>
-                    <h4>FluoMotion数字影像分析平台</h4>
+                <Col span={4}>
+                    <h3>FluoMotion数字影像分析平台</h3>
                 </Col>
-                <Col span={6} offset={12}>
+                <Col span={3} offset={21}>
                     <span>Admin</span>
                     <Dropdown overlay={menu}>
                         <Avatar src={userAvatar} />

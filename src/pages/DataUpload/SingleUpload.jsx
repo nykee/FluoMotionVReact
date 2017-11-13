@@ -1,8 +1,8 @@
 import React from 'react';
 import { Steps, Button, message } from 'antd';
-import PatientBasicInfoForm from '../components/SingelUpload/PatientBasicInfoForm'
-import PlateLocationForm from '../components/SingelUpload/PlateLocationForm'
-import PatientFileUploadForm from '../components/SingelUpload/PatientFileUploadForm'
+import PatientBasicInfoForm from '../../components/SingelUpload/PatientBasicInfoForm'
+import PlateLocationForm from '../../components/SingelUpload/PlateLocationForm'
+import PatientFileUploadForm from '../../components/SingelUpload/PatientFileUploadForm'
 const Step = Steps.Step;
 
 const steps = [{

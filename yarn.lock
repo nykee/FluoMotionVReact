@@ -2111,6 +2111,12 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
 
+echarts@^2.2.8:
+  version "2.2.8"
+  resolved "https://registry.yarnpkg.com/echarts/-/echarts-2.2.8.tgz#81a86694c4e5e917e6fdd39d52989002a685f5e7"
+  dependencies:
+    zrenderjs "~2.1.1-amd-beta1"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -7259,3 +7265,7 @@ yargs@~3.10.0:
     cliui "^2.1.0"
     decamelize "^1.0.0"
     window-size "0.1.0"
+
+zrenderjs@~2.1.1-amd-beta1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/zrenderjs/-/zrenderjs-2.1.1.tgz#e6ecf8d8c48e1f7af3f487f17d7e59e507a832cb"

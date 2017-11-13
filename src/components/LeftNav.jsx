@@ -37,6 +37,13 @@ class LeftNav extends React.Component {
     onSelect({ item, key, selectedKeys }){
         eventProxy.trigger('LeftMenuClick', key);
     }
+    componentDidMount(){
+        eventProxy.on('indexBreadClicked',()=>{
+            this.setState({
+                openKeys:['']
+            })
+        })
+    }
 
     render() {
         let divNormalStyle ={height:'100%',background:'#404040'};
@@ -66,12 +73,12 @@ class LeftNav extends React.Component {
                                 </Menu.Item>
 
                                 <SubMenu key="sub1" title={<span><Icon type="mail" /><span>数据管理</span></span>}>
-                                    <Menu.Item key="1"><Link to="/datacheck">数据查看</Link></Menu.Item>
-                                    <Menu.Item key="2"><Link to="/">数据下载</Link></Menu.Item>
+                                    <Menu.Item key="1"><Link to="/datamanage/check">数据查看</Link></Menu.Item>
+                                    <Menu.Item key="2"><Link to="/datamanage/download">数据下载</Link></Menu.Item>
                                 </SubMenu>
                                 <SubMenu key="sub2" title={<span><Icon type="mail" /><span>数据上传</span></span>}>
-                                    <Menu.Item key="3"><Link to="/singelupload">单个文件上传</Link></Menu.Item>
-                                    <Menu.Item key="4"><Link to="/">批量上传</Link></Menu.Item>
+                                    <Menu.Item key="3"><Link to="/upload/single">单个文件上传</Link></Menu.Item>
+                                    <Menu.Item key="4"><Link to="/upload/multiple">批量上传</Link></Menu.Item>
                                 </SubMenu>
                                 <SubMenu key="sub4" title={<span><Icon type="appstore" /><span>帮助</span></span>}>
                                     <Menu.Item key="5"><Link to="/">系统流程</Link></Menu.Item>

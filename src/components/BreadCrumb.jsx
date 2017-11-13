@@ -1,6 +1,7 @@
 import React from 'react';
 import { Breadcrumb } from 'antd';
 import eventProxy from '../state/eventProxy'
+import {Link} from 'react-router'
 
 class BreadCrumb extends React.Component {
     state = {
@@ -13,6 +14,9 @@ class BreadCrumb extends React.Component {
                 key
             });
         });
+    }
+    toIndex(){
+        eventProxy.trigger("indexBreadClicked")
     }
 
     render() {
@@ -30,7 +34,7 @@ class BreadCrumb extends React.Component {
             {subT:'帮助',name:'在线技术支持'},
             ];
         let BreadcrumbItems =[
-            <Breadcrumb.Item>首页</Breadcrumb.Item>
+            <Breadcrumb.Item><Link to="/" style={{textdecoration:'none'}} onClick={this.toIndex}>首页</Link></Breadcrumb.Item>
         ];
         let idx =this.state.key;
         if(idx !==0){
