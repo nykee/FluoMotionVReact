@@ -48,8 +48,9 @@ class LeftNav extends React.Component {
     componentDidMount(){
         eventProxy.on('indexBreadClicked',()=>{
             this.setState({
-                openKeys:['']
-            })
+                openKeys:[''],
+                selectedK:['0']
+            });
         });
         eventProxy.on('accountClick',()=>{
             // console.log('accountClick');

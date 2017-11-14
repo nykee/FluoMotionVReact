@@ -1,12 +1,14 @@
 import React from 'react';
 import { Breadcrumb } from 'antd';
 import eventProxy from '../state/eventProxy'
-import {Link} from 'react-router'
+import {browserHistory} from 'react-router'
 
 class BreadCrumb extends React.Component {
     state = {
-        key: 0
+        key: 0,
+        hover:false
     };
+
     componentDidMount() {
         // 监听LeftMenuClick 事件
         eventProxy.on('LeftMenuClick', (key) => {
@@ -14,10 +16,28 @@ class BreadCrumb extends React.Component {
                 key
             });
         });
+
     }
-    toIndex(){
-        eventProxy.trigger("indexBreadClicked")
-    }
+    toIndex= ()=>{
+        eventProxy.trigger("indexBreadClicked");
+        this.setState({
+            key:0
+        });
+        browserHistory.push('/')
+
+
+
+    };
+    onMouseEnter= ()=>{
+        this.setState({
+            hover:true
+        });
+    };
+    onMouseLeave = ()=>{
+        this.setState({
+            hover:false
+        });
+    };
 
     render() {
         let menuItems =[
@@ -34,7 +54,7 @@ class BreadCrumb extends React.Component {
             {subT:'帮助',name:'在线技术支持'},
             ];
         let BreadcrumbItems =[
-            <Breadcrumb.Item><Link to="/" style={{textdecoration:'none'}} onClick={this.toIndex}>首页</Link></Breadcrumb.Item>
+            <Breadcrumb.Item><span onMouseLeave={this.onMouseLeave} onMouseEnter={this.onMouseEnter} style={this.state.hover?{cursor:'pointer',color:'#108EE9'}:{}} onClick={this.toIndex}>首页</span></Breadcrumb.Item>
         ];
         let idx =this.state.key;
         if(idx !==0){
