@@ -10,6 +10,8 @@ import DataDownload from './pages/DataManage/DataDownload'
 import SingleUpload from './pages/DataUpload/SingleUpload'
 import DataUpload from './pages/DataUpload/DataUpload'
 import MultipleUpload from './pages/DataUpload/MultipleUpload'
+import HelpContainer from './pages/Help/HelpContainer'
+import AccountInfo from './pages/Help/AccountInfo'
 import registerServiceWorker from './registerServiceWorker';
 import { Router, Route,  browserHistory,IndexRoute  } from 'react-router';
 
@@ -25,6 +27,9 @@ const routes =
         <Route path="upload" component={DataUpload}>
             <Route path="single" component={SingleUpload}/>
             <Route path="multiple" component={MultipleUpload}/>
+        </Route>
+        <Route path="help" component={HelpContainer}>
+            <Route path="accountinfo" component={AccountInfo}/>
         </Route>
 
 

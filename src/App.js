@@ -25,12 +25,12 @@ class App extends Component {
                             <NavBar></NavBar>
                         </Col>
                     </Row>
-                    <Row justify="left">
-                        <Col span={6}>
+                    <Row type="flex" justify="left">
+                        <Col xs={2} sm={4} md={4} lg={4} xl={10}>
                             <BreadCrumb></BreadCrumb>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row >
 
                         {/*路由显示区*/}
                         {this.props.children}
