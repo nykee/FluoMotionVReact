@@ -32,17 +32,20 @@ class LeftNav extends React.Component {
     }
     handleIndexClick = ()=>{
         this.setState({
-            openKeys:['']
+            openKeys:[''],selectedK:['0']
         });
         browserHistory.push('/')
     }
 
     //onselect方法内触发事件
     onSelect =({ item, key, selectedKeys })=>{
-        console.log(key);
+        console.log(item);
+        console.log("key:"+key);
+        console.log("selectedKeys:"+selectedKeys);
         this.setState({
             selectedK:key
         });
+
         eventProxy.trigger('LeftMenuClick', key);
     }
     componentDidMount(){
@@ -92,20 +95,20 @@ class LeftNav extends React.Component {
                                 </Menu.Item>
 
                                 <SubMenu key="sub1" title={<span><Icon type="mail" /><span>数据管理</span></span>}>
-                                    <Menu.Item key="1"><Link to="/datamanage/check">数据查看</Link></Menu.Item>
-                                    <Menu.Item key="2"><Link to="/datamanage/download">数据下载</Link></Menu.Item>
+                                    <Menu.Item key="1"><Link to="/dataManage/check">数据查看</Link></Menu.Item>
+                                    <Menu.Item key="2"><Link to="/dataManage/download">数据下载</Link></Menu.Item>
                                 </SubMenu>
                                 <SubMenu key="sub2" title={<span><Icon type="mail" /><span>数据上传</span></span>}>
                                     <Menu.Item key="3"><Link to="/upload/single">单个文件上传</Link></Menu.Item>
                                     <Menu.Item key="4"><Link to="/upload/multiple">批量上传</Link></Menu.Item>
                                 </SubMenu>
                                 <SubMenu key="sub4" title={<span><Icon type="appstore" /><span>帮助</span></span>}>
-                                    <Menu.Item key="5"><Link to="/">系统流程</Link></Menu.Item>
-                                    <Menu.Item key="6"><Link to="/">拍摄注意事项</Link></Menu.Item>
-                                    <Menu.Item key="7"><Link to="/">数据上传要求</Link></Menu.Item>
-                                    <Menu.Item key="8"><Link to="/">下载文件内容</Link></Menu.Item>
-                                    <Menu.Item key="9"><Link to="/help/accountinfo">账户信息</Link></Menu.Item>
-                                    <Menu.Item key="10"><Link to="/">在线技术支持</Link></Menu.Item>
+                                    <Menu.Item key="5"><Link to="/help/systemFlow">系统流程</Link></Menu.Item>
+                                    <Menu.Item key="6"><Link to="/help/filmingNotice">拍摄注意事项</Link></Menu.Item>
+                                    <Menu.Item key="7"><Link to="/help/uploadRequirement">数据上传要求</Link></Menu.Item>
+                                    <Menu.Item key="8"><Link to="/help/downloadContent">下载文件内容</Link></Menu.Item>
+                                    <Menu.Item key="9"><Link to="/help/accountInfo">账户信息</Link></Menu.Item>
+                                    <Menu.Item key="11"><Link to="/help/onlineHelp">在线技术支持</Link></Menu.Item>
 
                                 </SubMenu>
                             </Menu>

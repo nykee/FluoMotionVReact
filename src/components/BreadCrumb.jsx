@@ -51,13 +51,14 @@ class BreadCrumb extends React.Component {
             {subT:'帮助',name:'数据上传要求'},
             {subT:'帮助',name:'下载文件内容'},
             {subT:'帮助',name:'账户信息'},
+            {},
             {subT:'帮助',name:'在线技术支持'},
             ];
         let BreadcrumbItems =[
             <Breadcrumb.Item><span onMouseLeave={this.onMouseLeave} onMouseEnter={this.onMouseEnter} style={this.state.hover?{cursor:'pointer',color:'#108EE9'}:{}} onClick={this.toIndex}>首页</span></Breadcrumb.Item>
         ];
-        let idx =this.state.key;
-        if(idx !==0){
+        let idx =this.state.key.toString();
+        if(idx !== "0"){
             BreadcrumbItems.push(
                     <Breadcrumb.Item>{menuItems[idx].subT}</Breadcrumb.Item>
             );
