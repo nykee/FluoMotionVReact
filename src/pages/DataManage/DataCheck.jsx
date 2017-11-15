@@ -1,13 +1,23 @@
 import React from 'react';
-import { Table ,Button} from 'antd';
+import { Table ,Button, Spin} from 'antd';
 
 
 
 class DataCheck extends React.Component {
-
+    state ={
+        loading:true
+    };
+    componentWillMount = ()=>{
+        setTimeout(()=>{
+            this.setState({
+                loading:false
+            })
+        },1000)
+    };
 
 
     render() {
+
         const columns = [{
             title: '姓名',
             dataIndex: 'name',
@@ -120,7 +130,13 @@ class DataCheck extends React.Component {
             console.log('params', pagination, filters, sorter);
         }
         return (
-            <Table bordered columns={columns} dataSource={data} onChange={onChange} />
+            <div>
+                <div style={this.state.loading?{height:400,width:'100%',position:'relative',backgroundColor:'rgba(255,255,255,0.3)'}:{display:'none'}}>
+                    <Spin style={{textAlignment:'center',position:'absolute',top:'40%'}} size="large"/>
+                </div>
+                <Table bordered columns={columns} dataSource={data} onChange={onChange} style={this.state.loading?{display:'none'}:{display:'block',backgroundColor:'#fff'} }/>
+            </div>
+
 
         )
     }

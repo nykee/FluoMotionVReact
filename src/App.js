@@ -6,6 +6,7 @@ import { Row, Col } from 'antd';
 import './App.css';
 import innoLogo from './style/img/inno1.png'
 
+
 class App extends Component {
   render() {
       let windHeight =window.innerHeight;
@@ -14,7 +15,7 @@ class App extends Component {
       };
     return (
         <div className="App">
-            <Row gutter={20}>
+            <Row >
                 {/*左侧导航*/}
                 <Col span={4} style={leftNStyle}><LeftNav></LeftNav></Col>
                 {/*右侧主界面*/}
@@ -25,12 +26,12 @@ class App extends Component {
                             <NavBar></NavBar>
                         </Col>
                     </Row>
-                    <Row type="flex" justify="left">
-                        <Col xs={2} sm={4} md={4} lg={4} xl={10}>
+                    <Row type="flex" justify="left" style={{backgroundColor:'#ECECEC',paddingTop:'1rem',paddingLeft:'1rem'}}>
+
                             <BreadCrumb></BreadCrumb>
-                        </Col>
+
                     </Row>
-                    <Row >
+                    <Row style={{backgroundColor:'#ECECEC',paddingTop:'0.8rem',paddingLeft:'1rem',paddingBottom:'0.4rem'}}>
 
                         {/*路由显示区*/}
                         {this.props.children}
