@@ -27,7 +27,7 @@ class NavBar extends React.Component {
         return (
             <Row>
                 <Col xs={2} sm={4} md={4} lg={6} xl={10}>
-                    <h3>FluoMotion数字影像分析平台</h3>
+                    <h3>XXXXX数字影像分析平台</h3>
                 </Col>
                 <Col span={3} offset={21}>
                     <span>Admin</span>

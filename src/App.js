@@ -4,7 +4,7 @@ import NavBar from './components/NavBar'
 import BreadCrumb from './components/BreadCrumb'
 import { Row, Col } from 'antd';
 import './App.css';
-import innoLogo from './style/img/inno1.png'
+import innoLogo from './style/img/nykee.png'
 
 
 class App extends Component {
@@ -40,13 +40,13 @@ class App extends Component {
                         {/*公司logo*/}
                         <Row type="flex" justify="center">
                             <Col span={24}>
-                                <img src={innoLogo} alt="" />
+                                <img src={innoLogo} alt=""  style={{width:150,height:50}}/>
                             </Col>
                         </Row>
                         {/*cpright*/}
                         <Row type="flex" justify="center">
                             <Col span={24}>
-                                <span>Copyright &copy; 2012-2017 Shanghai Innomotion Medical Inc. All Rights Reserved</span>
+                                <span>Copyright &copy; 2017-now nykee All Rights Reserved</span>
                             </Col>
                         </Row>
                     </Row>
