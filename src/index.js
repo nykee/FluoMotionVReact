@@ -22,6 +22,7 @@ import { Router, Route,  browserHistory,IndexRoute  } from 'react-router';
 
 
 
+
 const routes =
     <Route path={'/'} components={App}>
         <IndexRoute component={Dashboard} />
