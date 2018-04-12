@@ -131,7 +131,7 @@ class DataCheck extends React.Component {
         }
         return (
             <div>
-                <div style={this.state.loading?{height:400,width:'100%',position:'relative',backgroundColor:'rgba(255,255,255,0.3)'}:{display:'none'}}>
+                <div style={this.state.loading?{height:400,width:'100%',position:'relative',backgroundColor:'rgba(255,255,255,0.65)'}:{display:'none'}}>
                     <Spin style={{textAlignment:'center',position:'absolute',top:'40%'}} size="large"/>
                 </div>
                 <Table bordered columns={columns} dataSource={data} onChange={onChange} style={this.state.loading?{display:'none'}:{display:'block',backgroundColor:'#fff'} }/>
